@@ -2,6 +2,7 @@ package com.technews.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import javax.persistence.*;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.io.Serializable;
@@ -18,8 +19,7 @@ public class Comment implements Serializable {
     private String commentText;
     private Integer userId;
     private Integer postId;
-    public Comment {
-
+    public Comment() {
     }
     public Comment(Integer id, String commentText, Integer userId, Integer postId) {
         this.id = id;
